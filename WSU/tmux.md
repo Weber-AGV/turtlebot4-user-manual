@@ -60,6 +60,10 @@ tmux new -s ros2_control
 
 - Press Ctrl+b, then % to split vertically.
 - Press Ctrl+b, then " to split horizontally.
+- Press Ctrl+b, then left arrow to move to the left pane
+- Press Ctrl+b, then " to split horizontally.
+
+![tmux 4 panes](media/tmux_4pane.png)
 
 #### Run ROS 2 Commands in Panes:
 - Pane 1: Source your ROS 2 environment and run the ROS 2 daemon.
