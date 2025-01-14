@@ -2,6 +2,6 @@
 sort: 9
 ---
 
-# WSU Content
+# Inroduction to Linux
 
 {% include list.liquid all=true %}
