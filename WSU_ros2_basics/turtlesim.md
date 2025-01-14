@@ -36,7 +36,7 @@ Install the turtlesim package for your ROS 2 distro:
 
 ```shell
 sudo apt update
-sudo apt install ros-{DISTRO}-turtlesim
+sudo apt install ros-humble-turtlesim
 ```
 
 Check that the package is installed:
