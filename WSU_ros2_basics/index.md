@@ -1,7 +1,7 @@
 ---
-sort: 9
+sort: 10
 ---
 
-# WSU - Inroduction to Linux
+# ROS 2 Basics
 
 {% include list.liquid all=true %}
