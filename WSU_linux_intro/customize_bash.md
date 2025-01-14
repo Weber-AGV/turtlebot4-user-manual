@@ -2,7 +2,7 @@
 sort: 4
 ---
 
-## Customizing Bash in Linux
+## Customizing Bash in Linux (OPTIONAL)
 
 Customizing your Bash environment can improve your productivity and enhance the aesthetics of your terminal. In this guide, we'll discuss how to change the Bash theme to Dracula and use Starship for a modern and informative prompt.
 
