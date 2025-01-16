@@ -161,10 +161,10 @@ pip3 install setuptools==58.2.0
 ## 5. Write the Python Code
 Create a Python script to control the turtle. 
 
-In the terminal navigate to the `~/trutlesim_ws/src/my_turtlesim_controller/my_turtlesim_controller`
+In the terminal navigate to the `~/turtlesim_ws/src/my_turtlesim_controller/my_turtlesim_controller`
 
 ```bash
-cd ~/trutlesim_ws/src/my_turtlesim_controller/my_turtlesim_controller
+cd ~/turtlesim_ws/src/my_turtlesim_controller/my_turtlesim_controller
 ```
 
 Create a file called node_turtle_controller.py
@@ -266,10 +266,11 @@ Update the `setup.py` file to make your script executable. Modify the `entry_poi
 ```python
 entry_points={
     'console_scripts': [
-        'turtle_controller = my_turtlesim_controller.turtle_controller:main',
+        'turtle_controller = my_turtlesim_controller.node_turtle_controller:main',
     ],
 },
 ```
+
 
 ## 7. Build the Package
 Navigate back to the root of the workspace and build your package:
