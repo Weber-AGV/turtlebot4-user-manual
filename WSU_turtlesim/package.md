@@ -212,6 +212,9 @@ class TurtleController(Node):
         # Queue size of 10 specifies how many messages to store if the subscriber is slower
         self.publisher = self.create_publisher(Twist, '/turtle1/cmd_vel', 10)
         
+        #set up a timer in your ROS 2 node that calls the move_turtle method every 0.5 seconds.
+        self.timer = self.create_timer(0.5, self.move_turtle)
+        
         # Log a message indicating the node has been started
         self.get_logger().info('Turtle Controller Node has started.')
 
@@ -276,6 +279,10 @@ cd ~/turtlesim_ws
 colcon build --packages-select my_turtlesim_controller
 ```
 
+```note
+If you do colcon build --symlink-intall you won't have to do colcon build after every time you modify the python file
+```
+
 ## 8. Source the Workspace
 Source the workspace to make the package available:
 
@@ -283,7 +290,12 @@ Source the workspace to make the package available:
 source ~/turtlesim_ws/install/setup.bash
 ```
 
-9. Test the my_turtlesim_controller Node
+```note
+If you have added source ~/turtlesim_ws/install/setup.bash to your .bashrc then you can just source ~/.bashrc
+```
+
+
+## 9. Test the my_turtlesim_controller Node
 Launch the turtlesim node in one terminal:
 
 ```bash
@@ -294,6 +306,18 @@ In another terminal, run your controller node:
 
 ```bash
 ros2 run my_turtlesim_controller turtle_controller
+```
+
+In another terminal, run a topic echo for cmd_vel
+
+```bash
+ros2 topic echo /turtle1/cmd_vel
+```
+
+In another terminal, run rqt_graph
+
+```bash
+rqt_graph
 ```
 
 The turtle should move in a circular motion based on the linear and angular velocities you defined.
