@@ -13,7 +13,8 @@ The image below show a generic orientation of a car in relationship to a wall on
 
 - The angle between the car's x axis and the wall is denoted by &alpha;.
 - The scan data on line `b` corresponds to the x axis of the car
-- The scan data on line `a` corresponds to an angle &theta; from line `b`. The angle &theta; should range from 0 to 70 degrees relative to line `a`.
+- The scan data on line `a` corresponds to an angle &theta; from line `b`. 
+- The angle &theta; should range from 0 to 70 degrees relative to line `a`.
 - `a` and `b` will be distances returned by the `/scan` data
 
 <figure class="aligncenter">
@@ -34,6 +35,17 @@ Using the value for &alpha; we can determine D<sub>t</sub> as
     <img src="media/d_sub_t.png" alt="Dt calc" style="width: 70%"/>
     <figcaption>D<sub>t</sub> calculation</figcaption>
 </figure>
+
+# Math Formula Display
+
+Below is the formula displayed in larger font size:
+
+<div style="font-size: 2em;">
+    \\( \\alpha = \\arctan \\left( \\frac{a \\cos(\\theta) - b}{a \\sin(\\theta)} \\right) \\)
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 
 
 D<sub>t</sub> is the current distance between the car and the right wall.
@@ -57,7 +69,7 @@ Yet, there's an obstacle to consider. The robots velocity will move it to some f
 - `b` is the x axis of the robot
 - `a` is &theta; degrees from `b`
 - &theta; should be no more than 70 degrees
-- use `a` and `b` to calculate &alpha
+- use `a` and `b` to calculate &alpha;
 - use &alpha; to calculate D<sub>t</sub>
 - use &alpha; and D<sub>t</sub> to estimate future distance from wall D<sub>t+1</sub>
 - use D<sub>t+1</sub> to adjust the robot position from the wall
