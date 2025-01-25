@@ -36,18 +36,6 @@ Using the value for &alpha; we can determine D<sub>t</sub> as
     <figcaption>D<sub>t</sub> calculation</figcaption>
 </figure>
 
-# Math Formula Display
-
-Below is the formula displayed in larger font size:
-
-<div style="font-size: 2em;">
-    \\( \\alpha = \\arctan \\left( \\frac{a \\cos(\\theta) - b}{a \\sin(\\theta)} \\right) \\)
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-
-
 D<sub>t</sub> is the current distance between the car and the right wall.
 
 The error term e(t) is the difference between the desired distance and the actual distance. If the desired distance from the wall is 0.5 meters then e(t) = 0.5 - D<sub>t</sub>
