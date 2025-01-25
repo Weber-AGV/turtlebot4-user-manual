@@ -2,7 +2,7 @@
 sort: 2
 ---
 
-# Creating a `turtlesim_ws` Workspace in ROS 2
+# Create `turtlesim_ws` Workspace ROS 2
 
 The following steps guide you to create a ROS 2 workspace named `turtlesim_ws` and include the `turtlesim` package for running a simple simulation.
 
