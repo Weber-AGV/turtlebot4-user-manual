@@ -2,6 +2,6 @@
 sort: 13
 ---
 
-# CS6300: Wall Following
+# WSU Lab 3: Wall Following
 
 {% include list.liquid all=true %}

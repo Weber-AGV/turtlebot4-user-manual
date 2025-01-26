@@ -2,6 +2,6 @@
 sort: 11
 ---
 
-# WSU - Turtlesim Package, Nodes
+# WSU Lab 1 - Turtlesim Package, Nodes
 
 {% include list.liquid all=true %}
