@@ -36,12 +36,18 @@ Using the two distances `a` and `b` from `/scan`, the angle &theta; between the 
 
 Using the value for &alpha; we can determine D<sub>t</sub> as
 
-<figure class="aligncenter">
-    <img src="media/d_sub_t.png" alt="Dt calc" style="width: 70%"/>
-    <figcaption>D<sub>t</sub> calculation</figcaption>
-</figure>
+
+
+![D sub t](media/d_sub_t.png)
 
 D<sub>t</sub> is the current distance between the car and the right wall.
+<!-- 
+<figure class="aligncenter">
+    <img src="media/d_sub_t.png" alt="Dt calc" style="width: 100%"/>
+    <figcaption>D<sub>t</sub> calculation</figcaption>
+</figure> -->
+
+
 
 The error term e(t) is the difference between the desired distance and the actual distance. If the desired distance from the wall is 0.5 meters then e(t) = 0.5 - D<sub>t</sub>
 
