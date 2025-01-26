@@ -24,10 +24,15 @@ The image below show a generic orientation of a car in relationship to a wall on
 
 Using the two distances `a` and `b` from `/scan`, the angle &theta; between the laser scans, and trigonometry, we can express &alpha; as
 
-<figure class="aligncenter">
-    <img src="media/alpha_calc.png" alt="alpha calc" style="width: 70%"/>
+
+![alpha calc](media/alpha_calc.png)
+
+<!-- <figure class="aligncenter">
+    <img src="media/alpha_calc.png" alt="alpha calc" style="width: 100%"/>
     <figcaption>Calculation to find &alpha</figcaption>
-</figure>
+</figure> -->
+
+
 
 Using the value for &alpha; we can determine D<sub>t</sub> as
 
