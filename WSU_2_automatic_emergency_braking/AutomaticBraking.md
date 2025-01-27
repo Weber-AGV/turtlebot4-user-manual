@@ -222,25 +222,36 @@ A planar LiDAR (Light Detection and Ranging) is a device that uses laser light t
 
 <figure class="aligncenter">
     <img src="media/lidar_measurements.png" alt="lidarmeasurement" style="width: 70%"/>
+    <figcaption>This image shows the different variables stored in the Turtlebot4 LaserScan Messages</figcaption>
+ </figure>
+
+ <figure>   
     <img src="media/interface_scan.png" alt="interfacescan" style="width: 70%"/>
+    <figcaption>Stored values for LaserScan message for Turtlebot4</figcaption>
+    <figcaption>Key Data:</figcaption>
+    <figcaption>angle_min: radians</figcaption>
+    <figcaption>angle_max: radians</figcaption>
+    <figcaption>angle_increments: radians</figcaption>
+    <figcaption>ranges: meters</figcaption>
+</figure>
+<figure>
     <img src="media/info_scan.png" alt="infoscan" style="width: 70%"/>
     <img src="media/echoscan.png" alt="echoscan" style="width: 70%"/>
-    <figcaption>scan topic msgs </figcaption>
+    <figcaption>angle increment: 0.000184629 radians = ~ 0.5 degrees </figcaption>
 </figure>
 
-6. Applications:
+1. Applications:
 - Planar LiDARs are commonly used in robotics for obstacle detection and navigation.
 - They're also used in certain autonomous vehicle systems, especially in scenarios where 2D profiling is adequate.
 - Industries utilize planar LiDARs for safety systems, ensuring that machinery or automated platforms do not collide with obstacles.
 
-7. Advantages and Limitations:
+1. Advantages and Limitations:
 - Advantages: Planar LiDARs are typically simpler and less expensive than their 3D counterparts. They provide accurate distance measurements and can work in a variety of lighting conditions, including darkness.
 - Limitations: They only capture data in a single plane, so they might miss obstacles that lie above or below this plane. For a more comprehensive understanding of the environment, 3D LiDAR systems or multiple planar LiDARs at different orientations might be required.
 
 In summary, a planar LiDAR is a powerful tool for distance measurement and object detection in a 2D plane, with applications ranging from robotics to industrial safety systems.
 
 
-## RPLidar A1
 ## RPLIDAR A1
 
 The RPLIDAR A1 is a popular 360-degree 2D laser scanner (LiDAR) developed by SLAMTEC. It's widely used in robotics, drones, and other applications for environmental scanning, mapping, and obstacle detection.
